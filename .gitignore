@@ -1,0 +1,15 @@
+# system
+result
+result-*
+
+# secrets
+*.key
+*.pem
+*.env
+
+# nix
+flake.lock
+
+# editor
+*.swp
+
