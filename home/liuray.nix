@@ -12,7 +12,7 @@
   ../modules/apps/cli.nix 
   ../modules/apps/gui.nix
   ../modules/wm/hyprland.nix
-  ../modules/tools/waybar.nix
+  ../modules/tools/waybar/waybar.nix
  ];
 
 }
