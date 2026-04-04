@@ -29,6 +29,9 @@
         # 系統主配置
         ./configuration.nix
 
+	# 字體配置
+	./system/fonts.nix
+
         # Home Manager
         home-manager.nixosModules.home-manager
 
