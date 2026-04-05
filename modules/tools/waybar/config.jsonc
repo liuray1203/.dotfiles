@@ -3,10 +3,10 @@
 	"position": "top",
 
 	"modules-left": [
-		"sway/mode",
-		"sway/workspaces",
+		"hyprland/mode",
+		"hyprland/workspaces",
 		"custom/arrow10",
-		"sway/window"
+		"hyprland/window"
 	],
 
 	"modules-right": [
@@ -23,7 +23,7 @@
 		"custom/arrow4",
 		"battery",
 		"custom/arrow3",
-		"sway/language",
+		"hyprland/language",
 		"custom/arrow2",
 		"tray",
 		"clock#date",
@@ -79,7 +79,7 @@
 		}
 	},
 
-	"sway/language": {
+	"hyprland/language": {
 		"format": " {}",
 		"min-length": 5,
 		"on-click": "swaymsg 'input * xkb_switch_layout next'",
@@ -105,18 +105,18 @@
 		"tooltip": false
 	},
 
-	"sway/mode": {
+	"hyprland/mode": {
 		"format": "{}",
 		"tooltip": false
 	},
 
-	"sway/window": {
+	"hyprland/window": {
 		"format": "{}",
 		"max-length": 30,
 		"tooltip": false
 	},
 
-	"sway/workspaces": {
+	"hyprland/workspaces": {
 		"disable-scroll-wraparound": true,
 		"smooth-scrolling-threshold": 4,
 		"enable-bar-scroll": true,
@@ -209,6 +209,7 @@
 		"format": "",
 		"tooltip": false
 	}
+
 }
 
 // vi:ft=jsonc
