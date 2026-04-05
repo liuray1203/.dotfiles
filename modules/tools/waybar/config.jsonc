@@ -71,8 +71,8 @@
 	"cpu": {
 		"interval": 5,
 		"tooltip": false,
-		"format": " {usage}%",
-		"format-alt": " {load}",
+		"format": "   {usage}%",
+		"format-alt": "   {load}",
 		"states": {
 			"warning": 70,
 			"critical": 90
@@ -98,10 +98,10 @@
 
 	"network": {
 		"interval": 5,
-		"format-wifi": " {essid} ({signalStrength}%)",
-		"format-ethernet": " {ifname}",
+		"format-wifi": "  {essid} ({signalStrength}%)",
+		"format-ethernet": "  {ifname}",
 		"format-disconnected": "No connection",
-		"format-alt": " {ipaddr}/{cidr}",
+		"format-alt": "  {ipaddr}/{cidr}",
 		"tooltip": false
 	},
 
@@ -126,7 +126,7 @@
 	"pulseaudio": {
 		"format": "{icon} {volume}%",
 		"format-bluetooth": "{icon} {volume}%",
-		"format-muted": "",
+		"format-muted": "  ",
 		"format-icons": {
 			"headphone": "",
 			"hands-free": "",
@@ -134,7 +134,7 @@
 			"phone": "",
 			"portable": "",
 			"car": "",
-			"default": ["", ""]
+			"default": ["  ", "  "]
 		},
 		"scroll-step": 1,
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
