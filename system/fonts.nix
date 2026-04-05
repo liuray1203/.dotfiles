@@ -8,7 +8,7 @@
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
-    (nerdfonts.override { fonts = [ "Meslo" ]; })
+    nerd-fonts.meslo-lg 
   ];
 }
 
