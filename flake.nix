@@ -24,7 +24,7 @@
         })
 
         # 系統模塊：負責 SDDM + 安裝 Hyprland/Waybar/Kitty
-        ./system/hyprland.nix
+        ./system/display.nix
 
         # 系統主配置
         ./configuration.nix
