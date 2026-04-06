@@ -6,7 +6,6 @@
     hyprlauncher
     hyprlock
     hyprshot
-    pyprland
   ];
 }
 
