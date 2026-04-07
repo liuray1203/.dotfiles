@@ -24,13 +24,13 @@
         })
 
         # 系統模塊：負責 SDDM + 安裝 Hyprland/Waybar/Kitty
-        ./system/display.nix
+        ./modules/system/display.nix
 
         # 系統主配置
         ./configuration.nix
 
 	# 字體配置
-	./system/fonts.nix
+	./modules/system/fonts.nix
 
         # Home Manager
         home-manager.nixosModules.home-manager
