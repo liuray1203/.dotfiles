@@ -9,10 +9,10 @@
   programs.home-manager.enable = true;
 
   imports =[
-  ../modules/apps/cli.nix 
+  ../modules/shell/cli.nix 
   ../modules/apps/gui.nix
   ../modules/wm/hyprland.nix
-  ../modules/tools/waybar/waybar.nix
+  ../modules/desktop/waybar/waybar.nix
  ];
 
 }
