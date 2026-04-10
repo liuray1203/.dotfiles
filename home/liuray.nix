@@ -13,6 +13,7 @@
   ../modules/apps/gui.nix
   ../modules/wm/hyprland.nix
   ../modules/desktop/waybar/waybar.nix
+  ../modules/shell/shell.nix
  ];
 
 }
