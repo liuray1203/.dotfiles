@@ -170,5 +170,7 @@ fonts = {
   };
 
   nix.settings.auto-optimise-store = true;
+  users.users.liuray.shell = pkgs.zsh;
+
 
 }
