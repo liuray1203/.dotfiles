@@ -15,7 +15,7 @@
         rebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles#nixos";
       };
 
-      initExtra = ''
+      initContent = ''
         eval "$(starship init zsh)"
       '';
     };
