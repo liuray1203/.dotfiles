@@ -63,7 +63,7 @@
 	background: rgba(40, 40, 40, 0.8784313725); /* #282828e0 */
 	color: @white;
 	font-family: "JetBrainsMono Nerd Font";
-	font-size: 14pt;
+	font-size: 10pt;
 	/*font-weight: bold;*/
 }
 
@@ -83,8 +83,8 @@
 #disk,
 #user,
 #mpris {
-	padding-left: 8pt;
-	padding-right: 8pt;
+	padding-left: 6pt;
+	padding-right: 6pt;
 }
 
 /* Each critical module */
@@ -205,61 +205,61 @@
 }
 
 #custom-arrow1 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @time;
 	background: @date;
 }
 
 #custom-arrow2 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @date;
 	background: @layout;
 }
 
 #custom-arrow3 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @layout;
 	background: @battery;
 }
 
 #custom-arrow4 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @battery;
 	background: @temp;
 }
 
 #custom-arrow5 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @temp;
 	background: @cpu;
 }
 
 #custom-arrow6 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @cpu;
 	background: @memory;
 }
 
 #custom-arrow7 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @memory;
 	background: @network;
 }
 
 #custom-arrow8 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @network;
 	background: @sound;
 }
 
 #custom-arrow9 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @sound;
 	background: transparent;
 }
 
 #custom-arrow10 {
-	font-size: 11pt;
+	font-size: 8pt;
 	color: @unfocused;
 	background: transparent;
 }
