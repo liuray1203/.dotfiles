@@ -173,6 +173,9 @@ fonts = {
   users.users.liuray.shell = pkgs.zsh;
   programs.zsh.enable = true;
 
-
+  virtualisation.podman = {
+  enable = true;
+  dockerCompat = true; # 讓一些工具以為你有 docker
+  };
 
 }
