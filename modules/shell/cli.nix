@@ -13,6 +13,7 @@
     tree
     fzf
     zoxide
+    Distrobox
   ];
 }
 
