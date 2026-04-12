@@ -177,5 +177,7 @@ fonts = {
   enable = true;
   dockerCompat = true; # 讓一些工具以為你有 docker
   };
+  services.ollama.enable = true;
+
 
 }
