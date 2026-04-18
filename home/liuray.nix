@@ -11,7 +11,7 @@
   imports =[
   ../modules/shell/cli.nix 
   ../modules/apps/gui.nix
-  ../modules/wm/hypr/hyprland.nix
+  ../modules/wm/hypr/default.nix
   ../modules/desktop/waybar/waybar.nix
   ../modules/shell/zsh.nix
  ];
