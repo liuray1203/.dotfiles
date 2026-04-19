@@ -60,4 +60,14 @@
         "format": "",
         "on-click": "swaynag -f 'Terminus (TTF)'  -t warning -m 'Do you really want to exit sway?' -b 'Yes, exit sway' 'swaymsg exit'"
     }
+
+    "modules-right": ["network"],
+
+    "network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": "󰈀  Wired",
+    "format-disconnected": "⚠️ Disconnected",
+    "tooltip": true
+    }
+
 }
