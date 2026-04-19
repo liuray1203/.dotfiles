@@ -10,6 +10,7 @@
   # 其他必要的基礎套件
   environment.systemPackages = with pkgs; [
     hyprland
+    brightnessctl
   ];
 }
 
