@@ -57,6 +57,9 @@ in
       # scroll workspace
       "$mainMod, mouse_down, workspace, e+1"
       "$mainMod, mouse_up, workspace, e-1"
+
+      ", XF86MonBrightnessUp, exec, brightnessctl set +10%"
+      ", XF86MonBrightnessDown, exec, brightnessctl set 10%-"
     ];
 
     bindm = [
