@@ -24,11 +24,11 @@
           nixpkgs.config.allowUnfree = true;
         })
 
-        # 系統模塊：負責 SDDM + 安裝 Hyprland/Waybar/Kitty
-        ./modules/system/display.nix
-
         # 系統主配置
         ./configuration.nix
+
+        # 系統模塊：負責 SDDM + 安裝 Hyprland/Waybar/Kitty
+        ./modules/system/display.nix
 
 	# 字體配置
 	./modules/system/fonts.nix
