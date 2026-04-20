@@ -184,6 +184,14 @@ fonts = {
   host = "0.0.0.0";
   };
 
+stylix = {
+  enable = true;
 
+  image = ./wallpaper.png;
+
+  targets = {
+    gnome.enable = false;
+    };
+  };
 
 }
