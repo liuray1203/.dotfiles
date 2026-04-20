@@ -189,9 +189,8 @@ stylix = {
 
   image = ./wallpaper.png;
 
-  targets = {
-    gnome.enable = false;
-    };
   };
+
+stylix.targets.gnome.enable = false;
 
 }
