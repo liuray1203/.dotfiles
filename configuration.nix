@@ -192,5 +192,7 @@ stylix = {
   };
 
 stylix.targets.gnome.enable = false;
+stylix.targets.gtk.enable = true;
+
 
 }
