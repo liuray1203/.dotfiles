@@ -8,6 +8,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
+
   outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:
   let
     system = "x86_64-linux";
