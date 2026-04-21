@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./modules/system/display.nix
       inputs.stylix.nixosModules.stylix
+      ./modules/system/stylix.nix
     ];
 
   # Bootloader.
@@ -183,15 +184,5 @@ fonts = {
   enable = true;
   host = "0.0.0.0";
   };
-
-stylix = {
-  enable = true;
-
-  image = ./wallpaper.png;
-
-  };
-
-stylix.targets.gnome.enable = false;
-stylix.targets.gtk.enable = true;
 
 }
