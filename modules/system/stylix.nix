@@ -9,5 +9,6 @@
 
   stylix.targets.gnome.enable = false;
   stylix.targets.gtk.enable = true;
-  stylix.targets.qt.enable = false;  # 加这一行
+  stylix.targets.qt.enable = false;
+  stylix.targets.hyprland.enable = false;
 }
