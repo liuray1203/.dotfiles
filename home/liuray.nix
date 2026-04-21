@@ -7,6 +7,8 @@
   home.stateVersion = "25.11";
 
   programs.home-manager.enable = true;
+  
+  stylix.targets.hyprland.enable = false;  # 加这一行
 
   imports =[
   ../modules/shell/cli.nix 
