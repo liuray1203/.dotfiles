@@ -53,6 +53,12 @@ i18n.inputMethod = {
   ];
 };
 
+environment.sessionVariables = {
+  GTK_IM_MODULE = "fcitx";
+  QT_IM_MODULE = "fcitx";
+  XMODIFIERS = "@im=fcitx";
+};
+
 fonts = {
   enableDefaultPackages = true;
   packages = with pkgs; [
