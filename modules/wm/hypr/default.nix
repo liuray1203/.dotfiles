@@ -17,7 +17,7 @@
 
       exec-once = [
         "waybar"
-	"fctix5"
+	"fcitx5"
       ];
 
       env = [
