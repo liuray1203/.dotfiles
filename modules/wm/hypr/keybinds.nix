@@ -16,7 +16,7 @@ in
       "$mainMod, M, exec, sh -c 'command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit'"
       "$mainMod, E, exec, ${fileManager}"
       "$mainMod, SPACE, exec, ${menu}"
-      "$mainMod, W, exec, warp-terminal"
+      "$mainMod, W, exec, wezterm"
 
       # window behavior
       "$mainMod, V, togglefloating"
