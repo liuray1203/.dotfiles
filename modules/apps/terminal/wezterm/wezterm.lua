@@ -15,6 +15,10 @@ return {
     { key = "j", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Down") },
     { key = "k", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Up") },
     { key = "l", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Right") },
+    -- 分割（更好按🔥）
+    { key = "Enter", mods = "CTRL|SHIFT", action = wezterm.action.SplitVertical },
+    { key = "d", mods = "CTRL|SHIFT", action = wezterm.action.SplitHorizontal },
+
   },
 }
 
