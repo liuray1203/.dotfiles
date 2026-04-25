@@ -10,9 +10,9 @@
   NPM_CONFIG_PREFIX = "$HOME/.npm-global";
   };
 
-  home.sessionPath = [
-  "$HOME/.npm-global/bin"
-  ];
+  #home.sessionPath = [
+  #"$HOME/.npm-global/bin"
+  #];
 
 
   programs.home-manager.enable = true;
