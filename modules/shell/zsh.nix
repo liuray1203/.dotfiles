@@ -19,6 +19,9 @@
         eval "$(starship init zsh)"
 	eval "$(zoxide init zsh)"
       '';
+      initExtra = ''
+        export PATH=$HOME/.npm-global/bin:$PATH
+      '';
     };
 
     starship = {
@@ -48,7 +51,6 @@
 
   home.sessionPath = [
     "$HOME/.local/bin"
-    "$HOME/.npm-global/bin"
   ];
   home.sessionVariables = {
   EDITOR = "nvim";
