@@ -25,6 +25,7 @@
   ../modules/wm/hypr/default.nix
   ../modules/desktop/waybar/waybar.nix
   ../modules/shell/zsh.nix
+  ../modules/apps/terminal/wezterm
  ];
 
 }
