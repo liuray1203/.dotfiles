@@ -6,6 +6,15 @@
 
   home.stateVersion = "25.11";
 
+  home.sessionVariables = {
+  NPM_CONFIG_PREFIX = "$HOME/.npm-global";
+  };
+
+  home.sessionPath = [
+  "$HOME/.npm-global/bin"
+  ];
+
+
   programs.home-manager.enable = true;
   
   stylix.targets.hyprland.enable = false;  # 加这一行
