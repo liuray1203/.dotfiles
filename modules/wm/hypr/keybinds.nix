@@ -1,7 +1,7 @@
 { ... }:
 
 let
-  terminal = "kitty";
+  terminal = "wezterm";
   fileManager = "dolphin";
   menu = "hyprlauncher";
 in
@@ -16,7 +16,7 @@ in
       "$mainMod, M, exec, sh -c 'command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit'"
       "$mainMod, E, exec, ${fileManager}"
       "$mainMod, SPACE, exec, ${menu}"
-      "$mainMod, W, exec, wezterm"
+      "$mainMod, W, exec, kitty"
 
       # window behavior
       "$mainMod, V, togglefloating"
