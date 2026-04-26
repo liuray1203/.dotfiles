@@ -10,7 +10,10 @@
     ./windowrules.nix
   ];
  
-xdg.configFile."hypr/pyprland.toml".source = ./pyprland.toml;
+  workspace = [
+  "special:term, gapsin: 10, gapsout: 10"
+  ];
+
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -21,7 +24,6 @@ xdg.configFile."hypr/pyprland.toml".source = ./pyprland.toml;
       exec-once = [
         "waybar"
 	"fcitx5"
-	"pypr"
       ];
 
       env = [

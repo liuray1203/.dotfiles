@@ -17,7 +17,8 @@ in
       "$mainMod, E, exec, ${fileManager}"
       "$mainMod, SPACE, exec, ${menu}"
       "$mainMod, W, exec, kitty"
-      "$mainMod, T, exec, pypr toggle term"
+      "$mainMod, T, togglespecialworkspace, term"
+
 
       # window behavior
       "$mainMod, V, togglefloating"

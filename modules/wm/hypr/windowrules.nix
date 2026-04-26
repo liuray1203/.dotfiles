@@ -1,9 +1,10 @@
 {
   wayland.windowManager.hyprland.settings = {
     windowrulev2 = [
-      "float,title:^(term)$"
+      "float,class:^(org.wezfurlong.wezterm)$"
       "size 80% 50%,class:^(org.wezfurlong.wezterm)$"
       "center,class:^(org.wezfurlong.wezterm)$"
+      "workspace special:term,class:^(org.wezfurlong.wezterm)$"
     ];
   };
 }
