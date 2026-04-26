@@ -1,12 +1,11 @@
 {
   "scratchpads": {
     "term": {
-      "command": "wezterm",
-      "class": "org.wezfurlong.wezterm",
+      "command": "wezterm start --class term",
+      "class": "term",
       "animation": "fromTop",
       "size": "80% 50%",
-      "margin": 50,
-      "lazy": true
+      "margin": 50
     }
   }
 }
