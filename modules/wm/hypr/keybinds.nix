@@ -20,6 +20,7 @@ in
       "$mainMod, T, togglespecialworkspace, term"
 
 
+
       # window behavior
       "$mainMod, V, togglefloating"
       "$mainMod, P, pseudo"
