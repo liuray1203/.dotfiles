@@ -7,7 +7,6 @@
     ./input.nix
     ./keybinds.nix
     ./package.nix
-    ./windowrules.nix
   ];
  
 
