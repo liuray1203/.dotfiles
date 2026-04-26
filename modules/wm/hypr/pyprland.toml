@@ -1,3 +1,5 @@
+[pyprland]
+
 [scratchpads.term]
 command = "wezterm start --class term"
 class = "term"
