@@ -9,6 +9,8 @@
     ./package.nix
     ./windowrules.nix
   ];
+ 
+ xdg.configFile."pyprland.json".source = ./pyprland.json;
 
   wayland.windowManager.hyprland = {
     enable = true;
