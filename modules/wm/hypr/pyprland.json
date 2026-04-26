@@ -1,13 +1,13 @@
 {
-  "pyprland": {
-    "plugins": ["scratchpads"]
-  },
   "scratchpads": {
     "term": {
-      "command": "kitty",
+      "command": "wezterm",
+      "class": "org.wezfurlong.wezterm",
       "animation": "fromTop",
+      "size": "80% 50%",
       "margin": 50,
-      "unfocus": "hide"
+      "lazy": true
     }
   }
 }
+
