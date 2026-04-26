@@ -10,18 +10,11 @@
     ./windowrules.nix
   ];
  
-  workspace = [
-  "special:term, gapsin: 10, gapsout: 10"
-  ];
-
 
   wayland.windowManager.hyprland = {
     enable = true;
 
     settings = {
-      workspace = [
-      "special:term, gapsin:10, gapsout:10"
-    ];
       monitor = ",preferred,auto,auto";
 
       exec-once = [
@@ -32,6 +25,9 @@
       env = [
         "XCURSOR_SIZE,24"
         "HYPRCURSOR_SIZE,24"
+      ];
+      workspace = [
+        "special:term"
       ];
     };
   };
