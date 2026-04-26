@@ -7,6 +7,7 @@
     ./input.nix
     ./keybinds.nix
     ./package.nix
+    ./windowrules.nix
   ];
 
   wayland.windowManager.hyprland = {
