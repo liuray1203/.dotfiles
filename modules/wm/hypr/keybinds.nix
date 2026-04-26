@@ -17,7 +17,6 @@ in
       "$mainMod, E, exec, ${fileManager}"
       "$mainMod, SPACE, exec, ${menu}"
       "$mainMod, W, exec, kitty"
-      "$mainMod, T, togglespecialworkspace, term"
 
 
 
