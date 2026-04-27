@@ -18,7 +18,9 @@
 
       exec-once = [
         "waybar"
-	"fcitx5"
+	      "fcitx5"
+        "swww-daemon"
+        "swww img /home/liuray/.dotfiles/images.jpeg"
       ];
 
       env = [
