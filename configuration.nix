@@ -62,7 +62,7 @@
       };
     };
 
-    environmentFiles = [ config.sops.secrets."hermes-env".path ];
+    # environmentFiles = [ config.sops.secrets."hermes-env".path ];
   };
 
   # ──────────────────────────────────────────────
@@ -96,6 +96,11 @@
   virtualisation.podman = {
     enable       = true;
     dockerCompat = true;
+  };
+
+  system.stateVersion = "25.11";
+}
+rue;
   };
 
   system.stateVersion = "25.11";
