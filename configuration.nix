@@ -22,14 +22,14 @@
   i18n.defaultLocale = "zh_TW.UTF-8";
 
   # ──────────────────────────────────────────────
-  # 2. sops-nix secrets 管理
+  # 2. sops-nix secrets 管理 (暫時註解以避開建置錯誤)
   # ──────────────────────────────────────────────
-  sops.secrets."hermes-env" = {
-    sopsFile    = ./secrets/hermes-env.yaml;
-    owner       = "hermes";
-    group       = "hermes";
-    mode        = "0600";
-  };
+  # sops.secrets."hermes-env" = {
+  #   sopsFile    = ./secrets/hermes-env.yaml;
+  #   owner       = "hermes";
+  #   group       = "hermes";
+  #   mode        = "0600";
+  # };
 
   # ──────────────────────────────────────────────
   # 3. Ollama：本地 LLM server (Intel CPU 優化)
@@ -96,11 +96,6 @@
   virtualisation.podman = {
     enable       = true;
     dockerCompat = true;
-  };
-
-  system.stateVersion = "25.11";
-}
-rue;
   };
 
   system.stateVersion = "25.11";
