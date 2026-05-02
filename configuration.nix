@@ -85,6 +85,10 @@
 
   environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
 
+  environment.sessionVariables = {
+    HERMES_API_KEY = "ollama";
+  };
+
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
     auto-optimise-store   = true;
