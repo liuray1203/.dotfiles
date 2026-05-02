@@ -39,7 +39,7 @@
     acceleration = null;
     host         = "127.0.0.1";
     port         = 11434;
-    loadModels   = [ "hermes3:8b" "qwen2.5:7b" ];
+    loadModels   = [ "hermes3:8b" "qwen2.5:7b" "gemma4" ];
   };
 
   # ──────────────────────────────────────────────
@@ -52,7 +52,7 @@
     settings = {
       model = {
         base_url = "http://127.0.0.1:11434/v1";
-        default  = "hermes3:8b";
+        default  = "gemma4";
       };
       toolsets  = [ "all" ];
       max_turns = 60;
