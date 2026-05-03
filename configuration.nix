@@ -22,51 +22,18 @@
   i18n.defaultLocale = "zh_TW.UTF-8";
 
   # ──────────────────────────────────────────────
-  # 2. sops-nix secrets 管理 (暫時註解以避開建置錯誤)
-  # ──────────────────────────────────────────────
-  # sops.secrets."hermes-env" = {
-  #   sopsFile    = ./secrets/hermes-env.yaml;
-  #   owner       = "hermes";
-  #   group       = "hermes";
-  #   mode        = "0600";
-  # };
-
-  # ──────────────────────────────────────────────
-  # 3. Ollama：本地 LLM server (Intel CPU 優化)
+  # 2. Ollama：本地 LLM server (Intel CPU 優化)
   # ──────────────────────────────────────────────
   services.ollama = {
     enable       = true;
     acceleration = null;
     host         = "127.0.0.1";
     port         = 11434;
-    loadModels   = [ "hermes3:8b" "qwen2.5:7b" "gemma4" ];
+    loadModels   = [ "qwen2.5:7b" ]; # 保留通用模型，移除 hermes/gemma
   };
 
   # ──────────────────────────────────────────────
-  # 4. Hermes Agent (全局系統服務)
-  # ──────────────────────────────────────────────
-  services.hermes-agent = {
-    enable               = true;
-    addToSystemPackages  = true;
-
-    settings = {
-      model = {
-        base_url = "http://127.0.0.1:11434/v1";
-        default  = "gemma4";
-      };
-      toolsets  = [ "all" ];
-      max_turns = 60;
-      terminal  = {
-        backend = "local";
-        timeout = 180;
-      };
-    };
-
-    # environmentFiles = [ config.sops.secrets."hermes-env".path ];
-  };
-
-  # ──────────────────────────────────────────────
-  # 5. 使用者與系統維護
+  # 3. 使用者與系統維護
   # ──────────────────────────────────────────────
   users.users.liuray = {
     isNormalUser = true;
@@ -84,10 +51,6 @@
   ];
 
   environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
-
-  environment.sessionVariables = {
-    HERMES_API_KEY = "ollama";
-  };
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];

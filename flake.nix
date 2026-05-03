@@ -14,15 +14,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hermes-agent.url = "github:NousResearch/hermes-agent";
-
     sops-nix = {
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, hermes-agent, sops-nix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, stylix, sops-nix, ... }@inputs:
   let
     system = "x86_64-linux";
   in
@@ -34,7 +32,6 @@
         ({ ... }: { nixpkgs.config.allowUnfree = true; })
         ./configuration.nix
         stylix.nixosModules.stylix
-        hermes-agent.nixosModules.default
         sops-nix.nixosModules.sops
         home-manager.nixosModules.home-manager
         {
