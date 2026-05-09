@@ -1,8 +1,13 @@
 local wezterm = require 'wezterm'
 
 return {
-  font = wezterm.font("JetBrains Mono"),
+  font = wezterm.font_with_fallback({
+    "JetBrainsMono Nerd Font",
+    "Noto Sans CJK TC",
+  }),
+
   font_size = 12.0,
+  line_height = 1.0,
 
   color_scheme = "Catppuccin Mocha",
 
@@ -15,10 +20,8 @@ return {
     { key = "j", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Down") },
     { key = "k", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Up") },
     { key = "l", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Right") },
-    -- 分割（更好按🔥）
+
     { key = "Enter", mods = "CTRL|SHIFT", action = wezterm.action.SplitVertical },
     { key = "d", mods = "CTRL|SHIFT", action = wezterm.action.SplitHorizontal },
-
   },
 }
-
