@@ -7,6 +7,8 @@
     ./modules/system/display.nix
     ./modules/system/fonts.nix
     ./modules/system/stylix.nix
+    ./modules/system/fcitx5.nix
+
   ];
 
   # ──────────────────────────────────────────────
