@@ -18,9 +18,11 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    ags.url = "github:aylur/ags/v1";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, sops-nix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, stylix, sops-nix, ags, ... }@inputs:
   let
     system = "x86_64-linux";
   in
@@ -37,6 +39,7 @@
         {
           home-manager.useGlobalPkgs   = true;
           home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users."liuray"  = import ./home/liuray.nix;
         }
       ];

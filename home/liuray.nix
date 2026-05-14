@@ -23,7 +23,8 @@
   ../modules/shell/cli.nix 
   ../modules/apps/gui.nix
   ../modules/wm/hypr/default.nix
-  ../modules/desktop/waybar/waybar.nix
+  # ../modules/desktop/waybar/waybar.nix
+  ../modules/desktop/ags/default.nix
   ../modules/shell/zsh.nix
   ../modules/apps/terminal/wezterm
  ];
