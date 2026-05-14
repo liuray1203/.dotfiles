@@ -17,7 +17,7 @@
       monitor = ",preferred,auto,auto";
 
       exec-once = [
-        "waybar"
+        "ags"
 	      "fcitx5"
         "swww-daemon"
         "swww img /home/liuray/.dotfiles/images.jpeg"
