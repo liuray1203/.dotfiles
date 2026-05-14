@@ -14,7 +14,7 @@
     # 額外需要的套件，例如用於顯示圖標或執行腳本
     extraPackages = with pkgs; [
       gtksourceview
-      webkitgtk
+      webkitgtk_6_0
       accountsservice
     ];
   };
