@@ -1,0 +1,75 @@
+/* 全域變數與配色 */
+@define-color bg rgba(30, 30, 46, 0.9);
+@define-color fg #cdd6f4;
+@define-color accent #89b4fa;
+@define-color focused_bg #fab387;
+@define-color focused_fg #11111b;
+
+.bar {
+    background-color: @bg;
+    color: @fg;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    padding: 4px 12px;
+    border-bottom: 2px solid @accent;
+}
+
+/* 工作區樣式 */
+.workspaces button {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: @fg;
+    margin: 0 4px;
+    padding: 0 8px;
+    border-radius: 8px;
+    min-width: 30px;
+}
+
+.workspaces button.focused {
+    background-color: @focused_bg;
+    color: @focused_fg;
+    font-weight: bold;
+}
+
+.workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.system-window {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.system-menu {
+    background-color: @bg;
+    color: @fg;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid @accent;
+    min-width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.volume-slider slider {
+    min-height: 10px;
+    min-width: 150px;
+    margin-left: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+label {
+    margin: 0 5px;
+}
