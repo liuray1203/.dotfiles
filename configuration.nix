@@ -5,6 +5,7 @@
   imports = [
     ./hardware-configuration.nix
     ./modules/system/display.nix
+    ./modules/system/nvidia.nix
     ./modules/system/fonts.nix
     ./modules/system/stylix.nix
     ./modules/system/fcitx5.nix
