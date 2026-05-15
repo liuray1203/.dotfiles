@@ -20,14 +20,9 @@
     };
 
     ags.url = "github:aylur/ags/v1";
-
-    mangowm = {
-      url = "github:mangowm/mango";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, sops-nix, ags, mangowm, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, stylix, sops-nix, ags, ... }@inputs:
   let
     system = "x86_64-linux";
   in
@@ -37,7 +32,6 @@
       specialArgs = { inherit self inputs; };
       modules = [
         ({ ... }: { nixpkgs.config.allowUnfree = true; })
-        mangowm.nixosModules.mango
         ./configuration.nix
         stylix.nixosModules.stylix
         sops-nix.nixosModules.sops
