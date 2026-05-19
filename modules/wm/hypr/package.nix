@@ -7,6 +7,7 @@
     hyprlock
     hyprshot
     swww
+    brightnessctl
   ];
 }
 
