@@ -8,10 +8,11 @@
 .bar {
     background-color: @bg;
     color: @fg;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
     font-size: 14px;
     padding: 4px 12px;
     border-bottom: 2px solid @accent;
+    min-height: 36px;
 }
 
 /* 工作區樣式 */

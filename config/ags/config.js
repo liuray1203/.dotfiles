@@ -1,6 +1,7 @@
 const audio = await Service.import('audio')
 const network = await Service.import('network')
 const hyprland = await Service.import('hyprland')
+const battery = await Service.import("battery")
 
 const date = Variable("", {
     poll: [1000, 'date "+%H:%M:%S %b %e"'],
@@ -37,6 +38,17 @@ const VolumeSlider = () => Widget.Box({
 
 const NetworkIndicator = () => Widget.Icon({
     icon: network.wifi.bind("icon_name"),
+})
+
+const BatteryIndicator = () => Widget.Box({
+    children: [
+        Widget.Icon({
+            icon: battery.bind("icon_name"),
+        }),
+        Widget.Label({
+            label: battery.bind("percent").as(p => ` ${Math.round(p)}%`),
+        }),
+    ],
 })
 
 const SystemMenu = () => Widget.Box({
@@ -81,6 +93,7 @@ const Bar = (monitor = 0) => Widget.Window({
             child: Widget.Box({
                 children: [
                     NetworkIndicator(),
+		    BatteryIndicator
                     Widget.Label({ label: " System" }),
                 ],
             }),
