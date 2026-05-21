@@ -95,3 +95,5 @@ App.config({
         SystemWindow(),
     ],
 })
+
+const battery = await Service.import("battery")
