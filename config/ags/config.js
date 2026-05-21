@@ -93,7 +93,7 @@ const Bar = (monitor = 0) => Widget.Window({
             child: Widget.Box({
                 children: [
                     NetworkIndicator(),
-		    BatteryIndicator
+		    BatteryIndicator(),
                     Widget.Label({ label: " System" }),
                 ],
             }),
