@@ -25,8 +25,8 @@ in
       "$mainMod, P, pseudo"
 
       # screenshot
-      ", F10, exec, hyprshot -m window"
-      "SHIFT, F10, exec, hyprshot -m region"
+      ", Print, exec, hyprshot -m window"
+      "SHIFT, Print, exec, hyprshot -m region"
 
       # lock
       "$mainMod SHIFT, L, exec, hyprlock"
