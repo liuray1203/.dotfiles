@@ -1,5 +1,4 @@
 const audio = await Service.import('audio')
-const network = await Service.import('network')
 const hyprland = await Service.import('hyprland')
 const battery = await Service.import("battery")
 
@@ -57,24 +56,12 @@ const SystemMenu = () => Widget.Box({
     children: [
         Widget.Box({
             class_name: "menu-item",
-            children: [Widget.Label("Volume"), VolumeSlider()],
-        }),
-        Widget.Box({
-            class_name: "menu-item",
             children: [
                 Widget.Label("WiFi: "),
                 Widget.Label({ label: network.wifi.bind("ssid").as(s => s || "Disconnected") }),
             ],
         }),
     ],
-})
-
-const SystemWindow = () => Widget.Window({
-    name: "system-window",
-    class_name: "system-window",
-    anchor: ["top", "right"],
-    visible: false,
-    child: SystemMenu(),
 })
 
 const Bar = (monitor = 0) => Widget.Window({
