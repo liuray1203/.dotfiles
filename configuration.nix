@@ -50,7 +50,7 @@
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
-    vim git wget Upower
+    vim git wget upower
   ];
 
   environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
