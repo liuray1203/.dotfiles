@@ -35,10 +35,6 @@ const VolumeSlider = () => Widget.Box({
     ],
 })
 
-const NetworkIndicator = () => Widget.Icon({
-    icon: network.wifi.bind("icon_name"),
-})
-
 const BatteryIndicator = () => Widget.Box({
     children: [
         Widget.Icon({
@@ -79,7 +75,6 @@ const Bar = (monitor = 0) => Widget.Window({
             on_primary_click: () => App.toggleWindow("system-window"),
             child: Widget.Box({
                 children: [
-                    NetworkIndicator(),
 		    BatteryIndicator(),
                     Widget.Label({ label: " System" }),
                 ],
