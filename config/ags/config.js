@@ -1,4 +1,3 @@
-const audio = await Service.import('audio')
 const hyprland = await Service.import('hyprland')
 const battery = await Service.import("battery")
 
@@ -20,42 +19,13 @@ const Workspaces = () => Widget.Box({
     ),
 })
 
-const VolumeSlider = () => Widget.Box({
-    class_name: "volume-slider",
-    children: [
-        Widget.Icon({
-            icon: audio.speaker.bind("icon_name"),
-        }),
-        Widget.Slider({
-            hexpand: true,
-            draw_value: false,
-            on_change: ({ value }) => audio.speaker.volume = value,
-            value: audio.speaker.bind("volume"),
-        }),
-    ],
-})
-
 const BatteryIndicator = () => Widget.Box({
     children: [
-        Widget.Icon({
-            icon: battery.bind("icon_name"),
+        Widget.Label({
+	    label: " ",
         }),
         Widget.Label({
             label: battery.bind("percent").as(p => ` ${Math.round(p)}%`),
-        }),
-    ],
-})
-
-const SystemMenu = () => Widget.Box({
-    vertical: true,
-    class_name: "system-menu",
-    children: [
-        Widget.Box({
-            class_name: "menu-item",
-            children: [
-                Widget.Label("WiFi: "),
-                Widget.Label({ label: network.wifi.bind("ssid").as(s => s || "Disconnected") }),
-            ],
         }),
     ],
 })
