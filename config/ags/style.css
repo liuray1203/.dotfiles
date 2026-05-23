@@ -12,17 +12,15 @@
     font-size: 14px;
     padding: 4px 12px;
     border-bottom: 2px solid @accent;
-    min-height: 36px;
+    min-height: 36px;`
 }
 
 /* 工作區樣式 */
 .workspaces button {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: @fg;
-    margin: 0 4px;
-    padding: 0 8px;
-    border-radius: 8px;
-    min-width: 30px;
+    background: transparent;
+    border: none;
+    min-width: 20px;
+    padding: 0 4px;
 }
 
 .workspaces button.focused {

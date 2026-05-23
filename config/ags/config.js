@@ -13,7 +13,7 @@ const Workspaces = () => Widget.Box({
             on_clicked: () => hyprland.message(`dispatch workspace ${id}`),
             child: Widget.Label(`${id}`),
             class_name: hyprland.active.workspace.bind("id").as(i => 
-                `${i === id ? "focused" : ""}`
+                `${i === id ? "focused" : "●" : "○"`}
             ),
         }))
     ),
