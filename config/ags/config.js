@@ -8,14 +8,19 @@ const date = Variable("", {
 // 工作區組件
 const Workspaces = () => Widget.Box({
     class_name: "workspaces",
-    children: hyprland.bind("workspaces").as(ws => 
-        ws.sort((a, b) => a.id - b.id).map(({ id }) => Widget.Button({
-            on_clicked: () => hyprland.message(`dispatch workspace ${id}`),
-            child: Widget.Label(`${id}`),
-            class_name: hyprland.active.workspace.bind("id").as(i => 
-                `${i === id ? "focused" : "●" : "○"`}
-            ),
-        }))
+    children: hyprland.bind("workspaces").as(ws =>
+        ws.sort((a, b) => a.id - b.id).map(({ id }) =>
+            Widget.Button({
+                on_clicked: () =>
+                    hyprland.message(`dispatch workspace ${id}`),
+
+                child: Widget.Label({
+                    label: hyprland.active.workspace
+                        .bind("id")
+                        .as(i => i === id ? "●" : "○"),
+                }),
+            })
+        )
     ),
 })
 
