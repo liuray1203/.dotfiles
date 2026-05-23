@@ -18,7 +18,8 @@ in
       "$mainMod, SPACE, exec, ${menu}"
       "$mainMod, W, exec, kitty"
 
-
+      #restart ags shell
+      "SUPER, A, exec, pkill ags; ags &"
 
       # window behavior
       "$mainMod, V, togglefloating"
