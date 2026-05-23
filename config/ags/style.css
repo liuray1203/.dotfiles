@@ -17,10 +17,15 @@
 
 /* 工作區樣式 */
 .workspaces button {
+    all: unset;
     background: transparent;
     border: none;
     min-width: 20px;
     padding: 0 4px;
+}
+
+.workspaces label {
+    font-size: 18px;
 }
 
 .workspaces button:hover {
