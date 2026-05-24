@@ -10,7 +10,7 @@ const Workspaces = () => Widget.Box({
     class_name: "workspaces",
     children: hyprland.bind("workspaces").as(ws =>
         ws.sort((a, b) => a.id - b.id).map(({ id }) =>
-            Widget.EventBox({
+            Widget.Button({
                 on_clicked: () =>
                     hyprland.message(`dispatch workspace ${id}`),
 
@@ -19,6 +19,9 @@ const Workspaces = () => Widget.Box({
                         .bind("id")
                         .as(i => i === id ? "●" : "○"),
                 }),
+              
+                class_name: "workspace-button",
+
             })
         )
     ),
