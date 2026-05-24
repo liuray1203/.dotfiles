@@ -10,7 +10,7 @@ const Workspaces = () => Widget.Box({
     class_name: "workspaces",
     children: hyprland.bind("workspaces").as(ws =>
         ws.sort((a, b) => a.id - b.id).map(({ id }) =>
-            Widget.Button({
+            Widget.EventBox({
                 on_clicked: () =>
                     hyprland.message(`dispatch workspace ${id}`),
 
@@ -23,6 +23,7 @@ const Workspaces = () => Widget.Box({
         )
     ),
 })
+
 
 const BatteryIndicator = () => Widget.Box({
     children: [
