@@ -16,15 +16,51 @@
 }
 
 /* 工作區樣式 */
-.workspaces-button {
+.workspace-button {
     all: unset;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    min-width: 0;
+    min-height: 0;
     padding: 0 6px;
+    margin: 0;
 }
 
-.workspaces label {
+.workspace-button:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.workspace-button:focus {
+    outline: none;
+}
+
+.workspace-button label {
+    font-size: 18px;
+}.workspace-button {
+    all: unset;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    min-width: 0;
+    min-height: 0;
+    padding: 0 6px;
+    margin: 0;
+}
+
+.workspace-button:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.workspace-button:focus {
+    outline: none;
+}
+
+.workspace-button label {
     font-size: 18px;
 }
-
 
 /.workspaces button:hover {/
     /background-color: rgba(255, 255, 255, 0.2);/
