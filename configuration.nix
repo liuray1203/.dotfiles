@@ -81,18 +81,43 @@
     enable = true;
 
     settings = {
-      CPU_SCALING_GOVERNOR_ON_AC = "performance";
-      CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
 
-      CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+    CPU_SCALING_GOVERNOR_ON_AC = "performance";
+    CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
 
-      WIFI_PWR_ON_BAT = "on";
+    CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
 
-      USB_AUTOSUSPEND = 1;
+    WIFI_PWR_ON_BAT = "on";
 
-      START_CHARGE_THRESH_BAT0 = 75;
-      STOP_CHARGE_THRESH_BAT0 = 80;
+    USB_AUTOSUSPEND = 1;
+
+    SOUND_POWER_SAVE_ON_BAT = 1;
+
+    PCIE_ASPM_ON_BAT = "powersupersave";
+
+    RUNTIME_PM_ON_BAT = "auto";
+
+    START_CHARGE_THRESH_BAT0 = 75;
+    STOP_CHARGE_THRESH_BAT0 = 80;
     };
-  };
+    CPU_SCALING_GOVERNOR_ON_AC = "performance";
+    CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+
+    CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+
+    WIFI_PWR_ON_BAT = "on";
+
+    USB_AUTOSUSPEND = 1;
+
+    SOUND_POWER_SAVE_ON_BAT = 1;
+
+    PCIE_ASPM_ON_BAT = "powersupersave";
+
+    RUNTIME_PM_ON_BAT = "auto";
+
+    PLATFORM_PROFILE_ON_BAT = "low-power";
+
+    START_CHARGE_THRESH_BAT0 = 75;
+    STOP_CHARGE_THRESH_BAT0 = 80;};
 }
 
