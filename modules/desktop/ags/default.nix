@@ -9,7 +9,7 @@
     enable = true;
 
     # 指向 .dotfiles 內的設定檔目錄
-    configDir = ../../../config/ags;
+    configDir = ./.;
 
     # 額外需要的套件
     extraPackages = with pkgs; [
