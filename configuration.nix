@@ -29,7 +29,6 @@
   # ──────────────────────────────────────────────
   services.ollama = {
     enable       = true;
-    acceleration = null;
     host         = "127.0.0.1";
     port         = 11434;
     loadModels   = [ "qwen2.5:7b" ]; # 保留通用模型，移除 hermes/gemma
