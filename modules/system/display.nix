@@ -5,16 +5,18 @@
   hardware.graphics.enable = true;
 
   # 啟用 Hyprland 系統組件 (處理 Polkit, Portals 等)
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+  };
 
   # 停用 X server 與 SDDM (改用 TTY 登入)
   services.xserver.enable = false;
   services.displayManager.sddm.enable = false;
 
-  # XDG Portal 設定 (wlroots/layer-shell 支援必要項)
+  # XDG Portal 設定
   xdg.portal = {
     enable = true;
-    wlr.enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
     config.common.default = "*";
   };

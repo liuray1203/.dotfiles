@@ -73,6 +73,7 @@
 
   #加上upower
   services.upower.enable = true;
+  services.power-profiles-daemon.enable = false;
 
 #加上tlp
 

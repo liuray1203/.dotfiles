@@ -20,7 +20,7 @@
         "ags"
 	      "fcitx5"
         "swww-daemon"
-        "swww img /home/liuray/.dotfiles/images.jpeg"
+        "sleep 1 && swww img /home/liuray/.dotfiles/images.jpeg"
       ];
 
       env = [
