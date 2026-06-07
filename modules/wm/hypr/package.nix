@@ -6,7 +6,7 @@
     hyprlauncher
     hyprlock
     hyprshot
-    swww
+    awww
     brightnessctl
   ];
 }

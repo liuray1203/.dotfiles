@@ -19,8 +19,8 @@
       exec-once = [
         "ags"
 	      "fcitx5"
-        "swww-daemon"
-        "sleep 1 && swww img /home/liuray/.dotfiles/images.jpeg"
+        "awww-daemon"
+        "sleep 1 && awww img /home/liuray/.dotfiles/images.jpeg"
       ];
 
       env = [
