@@ -19,7 +19,7 @@ in
       "$mainMod, W, exec, kitty"
 
       #restart ags shell
-      "SUPER, A, exec, pkill ags; ags &"
+      "SUPER, A, exec, pkill waybar; waybar &"
 
       # window behavior
       "$mainMod, V, togglefloating"

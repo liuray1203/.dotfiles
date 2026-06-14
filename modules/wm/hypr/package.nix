@@ -8,6 +8,7 @@
     awww
     brightnessctl
     fuzzel
+    waybar
   ];
 }
 
