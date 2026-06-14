@@ -3,7 +3,7 @@
 let
   terminal = "wezterm";
   fileManager = "dolphin";
-  menu = "hyprlauncher";
+  menu = "fuzzel";
 in
 {
   wayland.windowManager.hyprland.settings = {
