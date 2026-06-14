@@ -27,12 +27,12 @@
   # ──────────────────────────────────────────────
   # 2. Ollama：本地 LLM server (Intel CPU 優化)
   # ──────────────────────────────────────────────
-  services.ollama = {
-    enable       = true;
-    host         = "127.0.0.1";
-    port         = 11434;
-    loadModels   = [ "qwen2.5:7b" ]; # 保留通用模型，移除 hermes/gemma
-  };
+  #services.ollama = {
+   # enable       = true;
+    #host         = "127.0.0.1";
+    #port         = 11434;
+    #loadModels   = [ "qwen2.5:7b" ]; # 保留通用模型，移除 hermes/gemma
+  #};
 
   # ──────────────────────────────────────────────
   # 3. 使用者與系統維護
