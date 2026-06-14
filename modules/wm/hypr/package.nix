@@ -8,6 +8,7 @@
     hyprshot
     awww
     brightnessctl
+    fuzzel
   ];
 }
 
