@@ -7,7 +7,6 @@
     hyprshot
     awww
     brightnessctl
-    fuzzel
     waybar
   ];
 }
