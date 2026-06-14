@@ -6,7 +6,7 @@
   ];
 
   programs.ags = {
-    enable = true;
+    enable = false;
 
     # 指向 .dotfiles 內的設定檔目錄
     configDir = ./.;
@@ -17,5 +17,6 @@
       webkitgtk_6_0
       accountsservice
     ];
+
   };
 }
