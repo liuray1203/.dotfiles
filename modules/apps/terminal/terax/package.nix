@@ -9,20 +9,18 @@ appimageTools.wrapType2 rec {
   src = ./Terax_0.8.2_amd64.AppImage;
 
   extraInstallCommands = ''
-    # 安裝 Desktop Entry
     install -Dm644 \
-      ${./squashfs-root/Terax.desktop} \
+      ${./Terax.desktop} \
       $out/share/applications/Terax.desktop
 
-    # 安裝 Icon
     install -Dm644 \
-      ${./squashfs-root/terax.png} \
+      ${./terax.png} \
       $out/share/icons/hicolor/256x256/apps/terax.png
   '';
 
   meta = with lib; {
     description = "AI-powered terminal";
-    license = licenses.unfree;
     platforms = platforms.linux;
+    license = licenses.unfree;
   };
 }
