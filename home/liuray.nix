@@ -27,6 +27,7 @@
   ../modules/desktop/ags/default.nix
   ../modules/shell/zsh.nix
   ../modules/apps/terminal/wezterm
+  ../modules/apps/terminal/terax
   ../modules/desktop/launchers/fuzzel.nix
   ../modules/apps/nvim
  ];

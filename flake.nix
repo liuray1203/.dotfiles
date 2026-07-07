@@ -20,9 +20,26 @@
     };
 
     ags.url = "github:aylur/ags/v1";
+
+    terax = {
+    url = "github:crynta/terax-ai";
+    inputs.nixpkgs.follows = "nixpkgs";
+
+   }; 
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, sops-nix, ags, ... }@inputs:
+  outputs = {
+    self,
+    nixpkgs, 
+    home-manager, 
+    stylix, 
+    sops-nix, 
+    ags,
+    terax,
+    ... 
+    }
+    @inputs:
+
   let
     system = "x86_64-linux";
   in
