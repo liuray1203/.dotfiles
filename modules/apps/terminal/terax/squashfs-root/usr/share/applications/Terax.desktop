@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Development;
+Comment=AI-native terminal emulator
+Exec=terax
+StartupWMClass=terax
+Icon=terax
+Name=Terax
+Terminal=false
+Type=Application
