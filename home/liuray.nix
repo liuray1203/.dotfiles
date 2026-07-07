@@ -29,6 +29,7 @@
   ../modules/apps/terminal/wezterm
   ../modules/desktop/launchers/fuzzel.nix
   ../modules/apps/nvim
+  ../modules/apps/terminal/terax
  ];
 
 }
