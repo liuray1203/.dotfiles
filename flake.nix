@@ -21,11 +21,6 @@
 
     ags.url = "github:aylur/ags/v1";
 
-    terax = {
-    url = "github:crynta/terax-ai";
-    inputs.nixpkgs.follows = "nixpkgs";
-
-   }; 
   };
 
   outputs = {
@@ -35,7 +30,6 @@
     stylix, 
     sops-nix, 
     ags,
-    terax,
     ... 
     }
     @inputs:
