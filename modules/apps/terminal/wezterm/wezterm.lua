@@ -11,6 +11,8 @@ return {
 
   color_scheme = "Catppuccin Mocha",
 
+  window_background_opacity = 0.85,
+
   front_end = "OpenGL",
 
   default_prog = { "/run/current-system/sw/bin/zsh" },
