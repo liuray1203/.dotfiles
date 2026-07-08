@@ -9,7 +9,11 @@ return {
   font_size = 12.0,
   line_height = 1.0,
 
-  color_scheme = "Catppuccin Mocha",
+  color_scheme = "Tokyo Night",
+
+  color = {
+   background = "#1e1e2ecc",
+  },
 
   window_background_opacity = 0.85,
 
