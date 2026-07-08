@@ -12,7 +12,7 @@ return {
   color_scheme = "Tokyo Night",
 
   colors = {
-   background = "#1e1e2ecc",
+   background = "#1e1e2e",
   },
 
   window_background_opacity = 0.85,
