@@ -11,7 +11,7 @@ return {
 
   color_scheme = "Tokyo Night",
 
-  color = {
+  colors = {
    background = "#1e1e2ecc",
   },
 
