@@ -18,8 +18,9 @@ in
       "$mainMod, SPACE, exec, ${menu}"
       "$mainMod, W, exec, kitty"
 
-      #restart ags shell
+      #restart waybar and fcitx5 
       "SUPER, A, exec, pkill waybar; waybar &"
+      "SUPER, f, exec, pkill fcitx5; fcitx5 &"
 
       # window behavior
       "$mainMod, V, togglefloating"
