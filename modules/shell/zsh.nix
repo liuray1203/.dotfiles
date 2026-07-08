@@ -16,11 +16,10 @@
       };
 
       initContent = ''
-        eval "$(starship init zsh)"
-	eval "$(zoxide init zsh)"
-      '';
-      initExtra = ''
         export PATH=$HOME/.npm-global/bin:$PATH
+
+        eval "$(starship init zsh)"
+        eval "$(zoxide init zsh)"
       '';
     };
 
@@ -52,8 +51,8 @@
   home.sessionPath = [
     "$HOME/.local/bin"
   ];
+
   home.sessionVariables = {
-  EDITOR = "nvim";
+    EDITOR = "nvim";
   };
 }
-

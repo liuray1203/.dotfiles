@@ -104,10 +104,10 @@
     };
   };
 #蓋上螢幕休眠
-  services.logind = {
-   lidSwitch = "suspend-then-hibernate";
-   lidSwitchExternalPower = "suspend-then-hibernate";
-   lidSwitchDocked = "ignore";
+  services.logind.settings.Login = {
+    HandleLidSwitch = "suspend-then-hibernate";
+    HandleLidSwitchExternalPower = "suspend-then-hibernate";
+    HandleLidSwitchDocked = "ignore";
   };
 }
 
