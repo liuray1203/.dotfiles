@@ -2,7 +2,7 @@
 
 let
   terminal = "wezterm";
-  fileManager = "dolphin";
+  fileManager = "nemo";
   menu = "fuzzel";
 in
 {
