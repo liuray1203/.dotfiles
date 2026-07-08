@@ -7,7 +7,7 @@
     base16Scheme =
       "${pkgs.base16-schemes}/share/themes/gruvbox-dark.yaml";
 
-    image = ../../images.jpeg;
+    image = ../../linux-nixos-7q.jpg;
     polarity = "dark";
 
     cursor = {
