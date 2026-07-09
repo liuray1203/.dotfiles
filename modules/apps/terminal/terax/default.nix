@@ -1,4 +1,4 @@
-{ config, pkgs, ... , inputs ? {} }:
+{ config, pkgs, inputs, ... }:
 
 {
   # 把 terax 加到該使用者的 home.packages
