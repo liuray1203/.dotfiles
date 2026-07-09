@@ -1,11 +1,16 @@
 {
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["clock", "idle_inhibitor"],
-    "modules-right": ["tray", "network", "custom/scratchpad-indicator", "pulseaudio", "custom/power"],
+    "modules-right": ["tray", "network", "battery", "custom/scratchpad-indicator", "pulseaudio", "custom/power"],
 
     "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
+
+    "battery": {
+    "format": "{capacity}%"
+    },
+    
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname} ",
