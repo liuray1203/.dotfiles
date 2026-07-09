@@ -9,6 +9,8 @@
     ./modules/system/fonts.nix
     ./modules/system/stylix.nix
     ./modules/system/fcitx5.nix
+    ./modules/system/nix-ld.nix
+
 
   ];
 
