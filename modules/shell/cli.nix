@@ -16,6 +16,7 @@
     distrobox
     lf
     nodejs
+    appimage-run
   ];
 }
 
