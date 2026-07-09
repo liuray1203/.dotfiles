@@ -49,7 +49,7 @@
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
-    vim git wget
+    vim git wget webkitgtk_4_1
   ];
 
   environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
