@@ -21,6 +21,7 @@
 
     ags.url = "github:aylur/ags/v1";
 
+    terax.url = "github:crynta/terax-ai";
   };
 
   outputs = {
