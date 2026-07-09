@@ -1,7 +1,7 @@
 {
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["clock", "idle_inhibitor"],
-    "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "custom/power"],
+    "modules-right": ["tray", "network", "custom/scratchpad-indicator", "pulseaudio", "custom/power"],
 
     "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -11,7 +11,7 @@
         "format-ethernet": "{ifname} ",
         "format-disconnected": "", 
         "max-length": 50,
-        "on-click": "kitty -e 'nmtui'"
+        "on-click": "kitty -e nmtui"
     },
     "idle_inhibitor": {
         "format": "{icon}",
