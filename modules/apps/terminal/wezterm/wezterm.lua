@@ -12,23 +12,23 @@ return {
   color_scheme = "Gruvbox Dark",
 
   colors = {
-    foreground = "#FFFFFF",  -- 白色字體
-    cursor_bg = "#FF8C00",   -- 橘色游標
+    foreground = "#FFFFFF", -- 白色字體
+    cursor_bg = "#FF8C00",  -- 橘色游標
   },
 
-  window_background_opacity = 0.85,
+  window_background_opacity = 0.75,
 
   front_end = "OpenGL",
 
   default_prog = { "/run/current-system/sw/bin/zsh" },
 
   keys = {
-    { key = "h", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Left") },
-    { key = "j", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Down") },
-    { key = "k", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Up") },
-    { key = "l", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Right") },
+    { key = "h",     mods = "ALT",        action = wezterm.action.ActivatePaneDirection("Left") },
+    { key = "j",     mods = "ALT",        action = wezterm.action.ActivatePaneDirection("Down") },
+    { key = "k",     mods = "ALT",        action = wezterm.action.ActivatePaneDirection("Up") },
+    { key = "l",     mods = "ALT",        action = wezterm.action.ActivatePaneDirection("Right") },
 
     { key = "Enter", mods = "CTRL|SHIFT", action = wezterm.action.SplitVertical },
-    { key = "d", mods = "CTRL|SHIFT", action = wezterm.action.SplitHorizontal },
+    { key = "d",     mods = "CTRL|SHIFT", action = wezterm.action.SplitHorizontal },
   },
 }
