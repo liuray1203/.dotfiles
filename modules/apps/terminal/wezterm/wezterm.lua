@@ -16,7 +16,7 @@ return {
     cursor_bg = "#FF8C00",  -- 橘色游標
   },
 
-  window_background_opacity = 0.75,
+  window_background_opacity = 0.55,
 
   front_end = "OpenGL",
 
