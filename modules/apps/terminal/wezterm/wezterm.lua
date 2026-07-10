@@ -12,7 +12,8 @@ return {
   color_scheme = "Gruvbox Dark",
 
   colors = {
-    foreground = "#FF8C00",  -- 橘色字體
+    foreground = "#FFFFFF",  -- 白色字體
+    cursor_bg = "#FF8C00",   -- 橘色游標
   },
 
   window_background_opacity = 0.85,
