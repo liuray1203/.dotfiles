@@ -2,6 +2,6 @@
 
 {
   home.file = {
-    ".config/opencode/AGENTS.md".source = ./ai/opencode.md;
+    ".config/opencode/AGENTS.md".source = ./opencode.md;
   };
 }
