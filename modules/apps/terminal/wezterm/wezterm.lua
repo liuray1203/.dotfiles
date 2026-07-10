@@ -9,11 +9,7 @@ return {
   font_size = 12.0,
   line_height = 1.0,
 
-  color_scheme = "Tokyo Night",
-
-  colors = {
-   background = "#1e1e2e",
-  },
+  color_scheme = "Gruvbox Dark",
 
   window_background_opacity = 0.85,
 
