@@ -11,6 +11,10 @@ return {
 
   color_scheme = "Gruvbox Dark",
 
+  colors = {
+    foreground = "#FF8C00",  -- 橘色字體
+  },
+
   window_background_opacity = 0.85,
 
   front_end = "OpenGL",
