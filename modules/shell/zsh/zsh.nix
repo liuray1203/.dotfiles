@@ -24,7 +24,7 @@
         export PATH="$HOME/.opencode/bin:$PATH"
 
         # 將 autosuggestion 接受從右方向鍵改為 Alt+F
-        ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=("${(@)ZSH_AUTOSUGGEST_ACCEPT_WIDGETS:#forward-char}")
+        ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=("''${(@)ZSH_AUTOSUGGEST_ACCEPT_WIDGETS:#forward-char}")
         bindkey '\ef' autosuggest-accept
       '';
     };
