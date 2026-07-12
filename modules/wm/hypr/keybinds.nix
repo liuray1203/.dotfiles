@@ -8,6 +8,7 @@ in
 {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "Alt";
+    "$otherMod" = "SUPER"
 
     bind = [
       # apps
@@ -31,9 +32,9 @@ in
       "SHIFT, Print, exec, hyprshot -m region"
 
       # lock
-      "$mainMod SHIFT, L, exec, hyprlock"
+      "$mainMod $otherMod, L, exec, hyprlock"
 
-      # focus
+      # focus30
       "$mainMod, H, movefocus, l"
       "$mainMod, L, movefocus, r"
       "$mainMod, K, movefocus, u"
