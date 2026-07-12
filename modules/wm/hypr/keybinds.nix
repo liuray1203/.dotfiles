@@ -8,7 +8,7 @@ in
 {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "Alt";
-    "$otherMod" = "SUPER"
+    "$otherMod" = "SUPER";
 
     bind = [
       # apps
