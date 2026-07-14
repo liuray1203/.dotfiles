@@ -22,13 +22,13 @@
   imports =[
   ../modules/shell/cli.nix 
   ../modules/apps/gui.nix
-  ../modules/wm/hypr/default.nix
+  ../modules/wm/hypr
   ../modules/desktop/waybar/waybar.nix
-  ../modules/desktop/ags/default.nix
+  #../modules/desktop/ags/default.nix
   ../modules/shell/zsh
   ../modules/apps/terminal/wezterm
   #../modules/apps/terminal/terax
-  ../modules/desktop/launchers/fuzzel.nix
+  ../modules/desktop/launchers
   ../modules/apps/nvim
   ../modules/desktop/filemanager/nemo.nix
   ../modules/ai/ai.nix
