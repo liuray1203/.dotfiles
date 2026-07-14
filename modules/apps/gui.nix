@@ -5,6 +5,7 @@
     vscode
     google-chrome
     nemo
+    spotify
   ];
 }
 
