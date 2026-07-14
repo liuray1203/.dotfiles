@@ -3,7 +3,7 @@
 let
   terminal = "wezterm";
   fileManager = "nemo";
-  menu = "raffi" 
+  menu = "raffi";
 in
 {
   wayland.windowManager.hyprland.settings = {
