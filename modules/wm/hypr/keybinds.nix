@@ -3,10 +3,7 @@
 let
   terminal = "wezterm";
   fileManager = "nemo";
-  menu = '' 
-    sh -c 'cmd=$(raffi -pI); [ -n "$cmd" ] && hyprctl dispatch exec "$cmd"'
-  '';
-
+  menu = "raffi" 
 in
 {
   wayland.windowManager.hyprland.settings = {
