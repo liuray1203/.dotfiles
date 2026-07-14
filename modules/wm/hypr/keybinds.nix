@@ -32,7 +32,7 @@ in
       "SHIFT, Print, exec, hyprshot -m region"
 
       # lock
-      "$mainMod $otherMod, L, exec, hyprlock"
+      "$otherMod, L, exec, hyprlock"
 
       # focus30
       "$mainMod, H, movefocus, l"
