@@ -31,6 +31,9 @@
 
         "HYPRCURSOR_THEME,Bibata-Modern-Ice"
         "HYPRCURSOR_SIZE,24"
+
+        # 讓 Electron 應用（Spotify、VS Code 等）使用原生 Wayland，避免 XWayland 縮放模糊
+        "NIXOS_OZONE_WL,1"
       ];
     };
   };
