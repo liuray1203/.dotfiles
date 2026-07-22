@@ -9,6 +9,7 @@
     enable = true;
     withUWSM = true;
   };
+  programs.niri.enable = true;
 
   # 停用 X server 與 SDDM (改用 TTY 登入)
   services.xserver.enable = false;
