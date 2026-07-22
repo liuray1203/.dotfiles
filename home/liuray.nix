@@ -23,6 +23,7 @@
   ../modules/shell/cli.nix 
   ../modules/apps/gui.nix
   ../modules/wm/hypr
+  ../modules/wm/niri/
   ../modules/desktop/waybar/waybar.nix
   #../modules/desktop/ags/default.nix
   ../modules/shell/zsh
