@@ -17,6 +17,7 @@
     lf
     nodejs
     appimage-run
+    superfile
   ];
 }
 
