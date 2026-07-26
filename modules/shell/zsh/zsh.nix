@@ -13,6 +13,7 @@
         ll = "ls -l";
         la = "ls -a";
         rebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles#nixos";
+        spf = "superfile";
       };
 
       initContent = ''
