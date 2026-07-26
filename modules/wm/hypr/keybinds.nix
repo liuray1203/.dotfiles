@@ -20,13 +20,15 @@ in
       "$mainMod, W, exec, kitty"
 
       #restart waybar and fcitx5 
-      "SUPER, A, exec, pkill waybar; waybar &"
-      "SUPER, f, exec, pkill fcitx5; fcitx5 &"
+      "$mainMod, A, exec, pkill waybar; waybar &"
+      "$mainMod, f, exec, pkill fcitx5; fcitx5 &"
 
       # window behavior
-      "$mainMod, V, togglefloating"
-      "$mainMod, P, pseudo"
-
+      "$otherMod, S, exec, hyprctl keyword general:layout scrolling"
+      "$otherMod, D, exec, hyprctl keyword general:layout dwindle"
+      "$otherMod, M, exec, hyprctl keyword general:layout master"
+      "$otherMod, O, exec, hyprctl keyword general:layout monocle"
+      
       # screenshot
       ", Print, exec, hyprshot -m window"
       "SHIFT, Print, exec, hyprshot -m region"
