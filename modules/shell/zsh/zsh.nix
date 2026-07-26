@@ -20,7 +20,6 @@
 
         eval "$(starship init zsh)"
         eval "$(zoxide init zsh)"
-        eval "$(superfile init zsh)"
 
         export PATH="$HOME/.opencode/bin:$PATH"
 
