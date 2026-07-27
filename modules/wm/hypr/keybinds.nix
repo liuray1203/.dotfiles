@@ -21,13 +21,13 @@ in
 
       #restart waybar and fcitx5 
       "$mainMod, A, exec, pkill waybar; waybar &"
-      "$mainMod, f, exec, pkill fcitx5; fcitx5 &"
+      "$otherMod, f, exec, pkill fcitx5; fcitx5 &"
 
       # window behavior
-      "$otherMod, S, exec, hyprctl keyword general:layout scrolling"
-      "$otherMod, D, exec, hyprctl keyword general:layout dwindle"
-      "$otherMod, M, exec, hyprctl keyword general:layout master"
-      "$otherMod, O, exec, hyprctl keyword general:layout monocle"
+      "$otherMod, 1, exec, hyprctl keyword general:layout scrolling"
+      "$otherMod, 2, exec, hyprctl keyword general:layout dwindle"
+      "$otherMod, 3, exec, hyprctl keyword general:layout master"
+      "$otherMod, 4, exec, hyprctl keyword general:layout monocle"
       
       # screenshot
       ", Print, exec, hyprshot -m window"
