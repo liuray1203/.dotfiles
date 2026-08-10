@@ -7,6 +7,7 @@
     ./input.nix
     ./keybinds.nix
     ./package.nix
+    ./hyprlock.nix
   ];
  
 

@@ -11,7 +11,7 @@
   };
  # programs.niri.enable = true;
 
-  # 停用 X server 與 SDDM (改用 TTY 登入)
+  # 停用 X server 與 SDDM，改用 LY 顯示管理員 (由 fingerprint.nix 啟用)
   services.xserver.enable = false;
   services.displayManager.sddm.enable = false;
 

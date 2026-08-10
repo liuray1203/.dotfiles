@@ -11,6 +11,7 @@
     ./modules/system/fcitx5.nix
     ./modules/system/nix-ld.nix
     ./modules/system/bluetooth.nix
+    ./modules/system/finger.nix
 
   ];
 
