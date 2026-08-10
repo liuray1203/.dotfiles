@@ -7,7 +7,7 @@
   # 啟用 Hyprland 系統組件 (處理 Polkit, Portals 等)
   programs.hyprland = {
     enable = true;
-    withUWSM = true;
+    withUWSM = false;
   };
  # programs.niri.enable = true;
 
