@@ -8,6 +8,7 @@
     ./keybinds.nix
     ./package.nix
     ./hyprlock.nix
+    ./windowrule.nix
   ];
  
 

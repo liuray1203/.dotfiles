@@ -24,10 +24,10 @@ in
       "$otherMod, f, exec, pkill fcitx5; fcitx5 &"
 
       # window behavior
-      "$otherMod, 1, exec, hyprctl keyword general:layout scrolling"
-      "$otherMod, 2, exec, hyprctl keyword general:layout dwindle"
-      "$otherMod, 3, exec, hyprctl keyword general:layout master"
-      "$otherMod, 4, exec, hyprctl keyword general:layout monocle"
+      "$otherMod, Q, exec, hyprctl keyword general:layout scrolling"
+      "$otherMod, w, exec, hyprctl keyword general:layout dwindle"
+      "$otherMod, e, exec, hyprctl keyword general:layout master"
+      "$otherMod, r, exec, hyprctl keyword general:layout monocle"
       
       # screenshot
       ", Print, exec, hyprshot -m window"
@@ -50,12 +50,12 @@ in
       "$mainMod, 5, workspace, 5"
       "$mainMod, 6, workspace, 6"
 
-      "$mainMod SHIFT, 1, movetoworkspace, 1"
-      "$mainMod SHIFT, 2, movetoworkspace, 2"
-      "$mainMod SHIFT, 3, movetoworkspace, 3"
-      "$mainMod SHIFT, 4, movetoworkspace, 4"
-      "$mainMod SHIFT, 5, movetoworkspace, 5"
-      "$mainMod SHIFT, 6, movetoworkspace, 6"
+      "$otherMod, 1, movetoworkspace, 1"
+      "$otherMod, 2, movetoworkspace, 2"
+      "$otherMod, 3, movetoworkspace, 3"
+      "$otherMod, 4, movetoworkspace, 4"
+      "$otherMod, 5, movetoworkspace, 5"
+      "$otherMod, 6, movetoworkspace, 6"
 
       # special workspace
       "$mainMod, S, togglespecialworkspace, magic"
