@@ -8,24 +8,24 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "thunderbolt" "nvme" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "thunderbolt" "nvme" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/ad81f6a4-84e8-4771-b2fc-a981ccbd357f";
+    { device = "/dev/disk/by-uuid/31ecef54-48e3-44eb-8efb-374bf6d4c180";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/E201-6219";
+    { device = "/dev/disk/by-uuid/919E-0DB3";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/9023c2bd-5683-458c-92d2-6009e612abd5"; }
+    [ { device = "/dev/disk/by-uuid/4904dcf3-0fce-4918-8264-72d3ba91b9b6"; }
     ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
