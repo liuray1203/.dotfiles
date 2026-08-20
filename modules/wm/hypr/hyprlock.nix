@@ -1,8 +1,5 @@
-{ lib, ... }:
+{ ... }:
 
-let
-  colors = import ./colors.nix { };
-in
 {
   # hyprlock 設定檔 (指紋解鎖 + 密碼備援)
   xdg.configFile."hypr/hyprlock.conf".text = ''
@@ -37,7 +34,7 @@ in
     background {
       monitor =
       path = screenshot
-      color = rgba(${colors.base00}ff)
+      color = rgba(1e1e2eff)
       blur_passes = 3
       blur_size = 7
       noise = 0.0117
@@ -58,14 +55,14 @@ in
       dots_center = true
       dots_rounding = -1
       dots_text_format =
-      outer_color = rgba(${colors.base07}80)
-      inner_color = rgba(${colors.base00}aa)
-      font_color = rgba(${colors.base07}ff)
+      outer_color = rgba(b4befe80)
+      inner_color = rgba(1e1e2eaa)
+      font_color = rgba(b4befeff)
       font_family = Noto Sans
       fade_on_empty = true
       fade_timeout = 2000
-      placeholder_text = <span foreground="rgba(${colors.base05}ff)">輸入密碼 (或掃描指紋)</span>
-      fail_text = <span foreground="rgba(${colors.base08}ff)">驗證失敗</span>
+      placeholder_text = <span foreground="rgba(cdd6f4ff)">輸入密碼 (或掃描指紋)</span>
+      fail_text = <span foreground="rgba(f38ba8ff)">驗證失敗</span>
       position = 0, -220
       halign = center
       valign = center
@@ -76,7 +73,7 @@ in
     label {
       monitor =
       text = $TIME
-      color = rgba(${colors.base07}ff)
+      color = rgba(b4befeff)
       font_size = 72
       font_family = Noto Sans
       position = 0, 80
@@ -89,7 +86,7 @@ in
     label {
       monitor =
       text = $DATE
-      color = rgba(${colors.base05}dd)
+      color = rgba(cdd6f4dd)
       font_size = 24
       font_family = Noto Sans
       position = 0, 30
@@ -102,7 +99,7 @@ in
     label {
       monitor =
       text = $USER
-      color = rgba(${colors.base0D}ff)
+      color = rgba(89b4faff)
       font_size = 20
       font_family = Noto Sans
       position = 0, -30
@@ -115,7 +112,7 @@ in
     label {
       monitor =
       text = $FPRINTPROMPT
-      color = rgba(${colors.base0C}ff)
+      color = rgba(94e2d5ff)
       font_size = 16
       font_family = Noto Sans
       position = 0, -150
@@ -128,7 +125,7 @@ in
     label {
       monitor =
       text = $FAIL
-      color = rgba(${colors.base08}ff)
+      color = rgba(f38ba8ff)
       font_size = 14
       font_family = Noto Sans
       position = 0, -180

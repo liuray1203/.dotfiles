@@ -10,7 +10,7 @@
     configType = "lua";
   };
 
-  xdg.configFile."hypr/init.lua".source = ./init.lua;
+  xdg.configFile."hypr/hyprland.lua".source = ./init.lua;
   xdg.configFile."hypr/modules".source = ./modules;
 }
 
