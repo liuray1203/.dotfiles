@@ -3,11 +3,11 @@
 -- $mainMod = Alt, $otherMod = SUPER
 
 local terminal    = "wezterm"
-local fileManager  = "nemo"
-local menu         = "fuzzel"
+local fileManager = "nemo"
+local menu        = "fuzzel"
 
-local mainMod  = "ALT"
-local otherMod = "SUPER"
+local mainMod     = "ALT"
+local otherMod    = "SUPER"
 
 -- 應用程式
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
@@ -21,12 +21,6 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("kitty"))
 -- 重啟 waybar / fcitx5
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("pkill waybar; waybar &"))
 hl.bind(otherMod .. " + f", hl.dsp.exec_cmd("pkill fcitx5; fcitx5 &"))
-
--- 切換排版方式 (layout)
-hl.bind(otherMod .. " + Q", hl.dsp.exec_cmd("hyprctl keyword general:layout scrolling"))
-hl.bind(otherMod .. " + w", hl.dsp.exec_cmd("hyprctl keyword general:layout dwindle"))
-hl.bind(otherMod .. " + e", hl.dsp.exec_cmd("hyprctl keyword general:layout master"))
-hl.bind(otherMod .. " + r", hl.dsp.exec_cmd("hyprctl keyword general:layout monocle"))
 
 -- 截圖
 hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m window"))

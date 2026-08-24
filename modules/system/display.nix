@@ -10,9 +10,12 @@
     withUWSM = false;
   };
  # programs.niri.enable = true;
+ services.xserver.enable = true;
+
+  # 啟用 KDE Plasma 6
+  services.desktopManager.plasma6.enable = true;
 
   # 停用 X server 與 SDDM，改用 LY 顯示管理員 (由 fingerprint.nix 啟用)
-  services.xserver.enable = false;
   services.displayManager.sddm.enable = false;
 
   # XDG Portal 設定
