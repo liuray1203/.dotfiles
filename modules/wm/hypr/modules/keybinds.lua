@@ -22,6 +22,47 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("pkill waybar; waybar &"))
 hl.bind(otherMod .. " + f", hl.dsp.exec_cmd("pkill fcitx5; fcitx5 &"))
 
+-- Layout 切換
+hl.bind(otherMod .. " + Q", function()
+  local ws = hl.get_active_workspace()
+  if ws then
+    hl.workspace_rule({
+      workspace = tostring(ws.id),
+      layout = "dwindle"
+    })
+  end
+end)
+
+hl.bind(otherMod .. " + W", function()
+  local ws = hl.get_active_workspace()
+  if ws then
+    hl.workspace_rule({
+      workspace = tostring(ws.id),
+      layout = "master"
+    })
+  end
+end)
+
+hl.bind(otherMod .. " + E", function()
+  local ws = hl.get_active_workspace()
+  if ws then
+    hl.workspace_rule({
+      workspace = tostring(ws.id),
+      layout = "scrolling"
+    })
+  end
+end)
+
+hl.bind(otherMod .. " + R", function()
+  local ws = hl.get_active_workspace()
+  if ws then
+    hl.workspace_rule({
+      workspace = tostring(ws.id),
+      layout = "monocle"
+    })
+  end
+end)
+
 -- 截圖
 hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m region"))
